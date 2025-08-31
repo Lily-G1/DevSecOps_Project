@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: Lilian
-      MYSQL_DATABASE: cruddy_app
+      MYSQL_DATABASE: crud_app
     volumes:
       - mysql-data:/var/lib/mysql
       - ./mysql-init:/docker-entrypoint-initdb.d
@@ -21,7 +21,7 @@ services:
       DB_HOST: mysql
       DB_USER: root
       DB_PASSWORD: Lilian
-      DB_NAME: cruddy_app
+      DB_NAME: crud_app
       JWT_SECRET: cruddyBuddySuperSecretKey
       RESET_ADMIN_PASS: 'true'
     depends_on:
