@@ -22,7 +22,7 @@ services:
       DB_USER: root
       DB_PASSWORD: Lilian
       DB_NAME: crud_app
-      JWT_SECRET: cruddyBuddySuperSecretKey
+      JWT_SECRET: devopsShackSuperSecretKey
       RESET_ADMIN_PASS: 'true'
     depends_on:
       - mysql
